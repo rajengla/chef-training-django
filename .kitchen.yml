@@ -18,3 +18,7 @@ suites:
     run_list:
       - recipe[django::default]
     attributes:
+  - name: install_from_pip
+    run_list:
+      - recipe[django::install_from_pip]
+    attributes:
