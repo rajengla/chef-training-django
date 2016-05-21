@@ -22,3 +22,7 @@ suites:
     run_list:
       - recipe[django::install_from_pip]
     attributes:
+  - name: install_using_virtualenv
+    run_list:
+      - recipe[django::install_using_virtualenv]
+    attributes:
